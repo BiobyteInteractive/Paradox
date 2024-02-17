@@ -10,3 +10,5 @@ $Env:VCPKG_DEFAULT_TRIPLET = "x64-windows";
 .\vendor\vcpkg\vcpkg.exe install lua;
 
 .\vendor\windows\premake5\premake5.exe vs2022;
+
+cd .\scripts;
