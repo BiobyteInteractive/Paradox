@@ -1,9 +1,8 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-#include <raylib.h>
-#include <raygui.h>
+#include "core/application.h"
 
-int add(int a, int b);
+// Systems
 
 #endif // !ENGINE_H

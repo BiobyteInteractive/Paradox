@@ -10,7 +10,7 @@ project "sandbox"
 
     includedirs { "%{wks.location}/vendor/vcpkg/installed/x64-windows/include", "%{wks.location}/source/engine/src" }
     libdirs { "%{wks.location}/vendor/vcpkg/installed/x64-windows/lib", "%{wks.location}/bin/engine/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}" }
-    links { "raylib", "engine" }
+    links { "engine" }
 
     filter "configurations:Release"
         defines
