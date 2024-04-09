@@ -11,7 +11,7 @@ project "engine"
     links { "raylib", "flecs" }
 
     postbuildcommands { 
-        "{COPY} %{wks.location}/vendor/vcpkg/installed/x64-windows/bin/*.dll %{wks.location}/bin/sandbox/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+        "{COPY} %{wks.location}/vendor/vcpkg/installed/x64-windows/bin/*.dll %{wks.location}/bin/%{prj.name}/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
     }
 
     filter "configurations:Release"
