@@ -1,4 +1,5 @@
 cd ..;
+git submodule update --init --recursive;
 $Env:VCPKG_DEFAULT_TRIPLET = "x64-windows";
 .\vendor\vcpkg\bootstrap-vcpkg.bat -disableMetrics;
 
