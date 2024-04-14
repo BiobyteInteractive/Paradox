@@ -1,10 +1,10 @@
 project "engine"
     kind "StaticLib"
-    language "C"
-    cdialect "C17"
+    language "C++"
+    cppdialect "C++17"
 
     targetdir "%{wks.location}/bin/%{prj.name}/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-    files { "./src/**.h", "./src/**.c" }
+    files { "./src/**.h", "./src/**.c", "./src/**.hpp", "./src/**.cpp" }
 
     includedirs { "%{wks.location}/vendor/vcpkg/installed/x64-windows/include" }
     libdirs { "%{wks.location}/vendor/vcpkg/installed/x64-windows/lib" }
